@@ -1,0 +1,27 @@
+{%extends ('/index.html') %}
+
+{% block title %} Registro {% endblock %}
+
+{% block formulario %}
+    <h1>Registro de Usuario</h1>
+    <form method="POST">
+        <div class="nombres">
+            <label>Nombres:</label> <br> <input type="text" name="Nombres" required>
+        </div>
+
+        <div class="apellidos">
+            <label>Apellidos:</label> <br> <input type="text" name="Apellidos" required>
+         </div>
+
+        <div class="correo">
+            <label>Correo Electrónico:</label> <br> <input type="email" name="Correo" required>
+        </div>
+
+        <div class="contraseña">
+            <label>Contraseña:</label> <br> <input type="password" name="Passwordd" required>
+        </div>
+
+        <button type="submit" class="button">Registrarse</button>
+        <p>¿Ya tiene una cuenta? <a href="http://127.0.0.1:5000/login"> Inicie sesión</a></p>
+    </form>
+{% endblock %}

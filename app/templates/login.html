@@ -1,0 +1,37 @@
+{% extends ('/index.html') %}
+
+{% block title %}Inicio de sesión{% endblock %}
+
+{% block formulario %}
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+
+            <div class="alert-warning" role="alert">
+                <strong>{{ message }}</strong>
+            </div>
+          
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+
+    <h1>Inicio de sesión</h1>
+    <form method="POST">
+        <div class="correo">
+            <label>Correo Electrónico:</label> <br> <input type="email" name="Correo" required>
+        </div>
+        <div class="contraseña">
+            <label>Contraseña:</label> <br> <input type="password" name="Passwordd" required>
+        </div>
+        
+        <div class="remember-forgot">
+            <label><input type="checkbox"> Recuérdame</label>
+            <a href="http://127.0.0.1:5000/forgot_password">Olvidé mi contraseña</a>
+        </div>
+        
+        <button type="submit" class="button">Iniciar sesión</button>
+    
+        <p>¿No tiene una cuenta? <a href="http://127.0.0.1:5000/signup"> Regístrese</a></p>
+    </form>
+
+{% endblock %}

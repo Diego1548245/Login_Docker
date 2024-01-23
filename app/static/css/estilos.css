@@ -1,0 +1,224 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: url('img/fondo.png') no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.formulario {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: transparent;
+    border: 5px solid rgba(255, 255, 255, 0);
+    backdrop-filter: blur(20px);
+    border-radius: 30px;
+    color: #fff;
+}
+
+.formulario h1 {
+    text-align: center;
+    padding: 0 0 20px 0;
+    color: #ffffff;
+}
+
+.formulario h2 {
+    text-align: center;
+    padding: 0 0 20px 0;
+    color: #ffffff;
+    font-size: 20px;
+}
+.formulario form {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+form .nombres {
+    position: relative;
+    border-bottom: 4px solid#212121;
+    border-radius: 3px;
+    margin: 30px 0;
+    color: #ffffff;
+}
+
+.nombres input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+    color: #ffffff;
+}
+
+form .apellidos {
+    position: relative;
+    border-bottom: 4px solid#212121;
+    border-radius: 3px;
+    margin: 30px 0;
+    color: #ffffff;
+}
+
+.apellidos input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+    color: #ffffff;
+}
+
+form .correo {
+    position: relative;
+    border-bottom: 4px solid#212121;
+    border-radius: 3px;
+    margin: 30px 0;
+    color: #ffffff;
+}
+
+.correo input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+    color: #ffffff;
+}
+
+form .contraseña {
+    position: relative;
+    border-bottom: 4px solid#212121;
+    border-radius: 3px;
+    margin: 30px 0;
+    color: #ffffff;
+}
+
+.contraseña input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+    color: #ffffff;
+}
+
+.button {
+    width: 20pc;
+    height: 50px;
+    background: #212121;
+    border: none;
+    border-radius: 15px;
+    font-size: 25px;
+    outline: none;
+    color: #ffffff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button a {
+    font-size: 25px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    display: block;
+    margin: auto;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 40px;
+}
+
+.navbar .btnLogin-Signin {
+    position: relative;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+form .remember-forgot {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px 0 0;
+}
+
+
+p {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+p a {
+    margin-left: 10px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    align-items: center;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a.redirect {
+    color: #fff;
+    text-decoration: none;
+    align-items: center;
+}
+.alert-warning {
+    height: 1.7pc;
+    background: #212121;
+    margin: 20px 125px;
+    border-radius: 5px;
+    border: #fff;
+}
+
+.alert-warning strong {
+    display: flex;
+    font-size: 20px;
+    margin-left: 8px;
+    text-decoration: underline;
+}

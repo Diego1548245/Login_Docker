@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/estilos.css')}}">
+    <title>{% block title %}Index{% endblock %}</title>
+</head>
+<body>
+    <header class="header">  
+        <nav class="navbar">
+          <a href="http://127.0.0.1:5000/">Menú</a>
+          <a href="http://127.0.0.1:5000/login">Log in</a>
+          <a href="http://127.0.0.1:5000/signup">Sign in</a>
+          <a href="http://127.0.0.1:5000/change_password">Cambiar Contraseña</a>
+        </nav> 
+    </header>
+
+    <div class="formulario">
+      {% block formulario %} {% endblock %}
+    </div>
+</body>
+</html>
