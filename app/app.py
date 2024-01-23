@@ -35,6 +35,7 @@ def registro():
         cnx.commit()
         cursor.close()
         return render_template('signup_check.html')
+    
     return render_template('signup.html')
 
 
@@ -101,9 +102,7 @@ def change_password():
             cursor.close()
             return render_template('change_check.html')
 
-        else : 
-            cursor.close()
-            flash('Datos inválidos')
+        else : flash('Datos inválidos')
 
     return render_template('change_password.html')
 
